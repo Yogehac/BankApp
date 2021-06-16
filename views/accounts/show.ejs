@@ -1,0 +1,42 @@
+<% layout('layouts/boilerplate') %> 
+<link rel="stylesheet" href="/stylesheets/st.css">
+<!-- <link rel="stylesheet" href="/stylesheets/navbar.css"> -->
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <h5 class="card-header text-light bg-success">Account details</h5>
+            <div class="card-body">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="row">Account holder</th>
+                    <td><%= account.name %></td>
+                  </tr>
+                  <tr>
+                    <th class="row">Account number</th>
+                    <td><%= account.accountNumber %></td>
+                  </tr>
+                  <tr>
+                    <th class="row">Email</th>
+                    <td><%= account.email %></td>
+                  </tr>
+                  <tr>
+                    <th class="row">Available balnce</th>
+                    <td>&#x20B9; <%= account.balance %> /-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="text-center mb-3">
+                <a href="/accounts/<%= account._id %>/transfer" class="btn btn-primary">Transfer Money</a>
+                <a href="/accounts/<%= account._id %>/transactions" class="btn btn-warning">Transaction history</a>
+              </div>
+              <div class="text-center mb-3">
+               <a href="/accounts" class="btn btn-danger">All accounts</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

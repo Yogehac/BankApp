@@ -1,0 +1,11 @@
+body {
+	height: 200vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.664)),
+		url("https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.colorWhite {
+	color: rgb(224, 224, 224);
+}
