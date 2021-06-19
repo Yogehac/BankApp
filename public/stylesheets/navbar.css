@@ -1,0 +1,25 @@
+.nav-link {
+	padding: 0.25rem 0;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 1rem;
+	border-bottom: 0.15rem solid transparent;
+}
+
+.nav-link:hover {
+	color: rgba(255, 255, 255, 0.5);
+	border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+	color: white;
+	border-bottom-color: white;
+}
+.contact {
+	text-decoration: none;
+	font-weight: 400;
+	color: rgb(168, 164, 164);
+}
+.contact:hover {
+	color: rgb(27, 140, 233);
+}
